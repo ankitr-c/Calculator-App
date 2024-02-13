@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculations Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Number 1</th>
+                <th>Number 2</th>
+                <th>Operation</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for calculation in calculations %}
+            <tr>
+                <td>{{ calculation.id }}</td>
+                <td>{{ calculation.num1 }}</td>
+                <td>{{ calculation.num2 }}</td>
+                <td>{{ calculation.operation }}</td>
+                <td>{{ calculation.result }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
