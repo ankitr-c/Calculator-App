@@ -2,7 +2,7 @@ import pymysql
 
 # Database configuration
 db_config = {
-    'host': 'localhost',
+    'host': '192.168.0.3',
     'user': 'root',  # Replace with your MySQL username
     'password': 'root',  # Replace with your MySQL password
     'port': 8000

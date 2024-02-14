@@ -4,11 +4,18 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Database configuration
+# db_config = {
+#     'host': '192.168.0.3',
+#     'user': 'root',  # Replace with your MySQL username
+#     'password': 'root',  # Replace with your MySQL password
+#     'port': 8000,
+#     'database': 'demo'
+# }
 db_config = {
-    'host': '192.168.2.116',
+    'host': '34.136.12.173',
     'user': 'root',  # Replace with your MySQL username
     'password': 'root',  # Replace with your MySQL password
-    'port': 8000,
+    'port': 3306,
     'database': 'demo'
 }
 
@@ -63,4 +70,4 @@ def dashboard():
     return render_template('dashboard.html', calculations=calculations_list)
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port=5000)
+    app.run(debug=True,host='0.0.0.0',port=8010)
