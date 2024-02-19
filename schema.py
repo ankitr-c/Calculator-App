@@ -1,11 +1,12 @@
 import pymysql
-
+import cred
 # Database configuration
+
 db_config = {
-    'host': '192.168.0.3',
-    'user': 'root',  # Replace with your MySQL username
-    'password': 'root',  # Replace with your MySQL password
-    'port': 8000
+    'host': cred.host,
+    'user': cred.user,  # Replace with your MySQL username
+    'password': cred.password,  # Replace with your MySQL password
+    'port': cred.port
 }
 
 def create_database():

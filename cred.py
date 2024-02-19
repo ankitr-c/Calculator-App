@@ -1,5 +1,7 @@
-host: '35.222.87.212'
-user: 'root'
-password: 'root'
-port: 3306
-database: 'demo'
+host='34.132.123.218'
+# host='mysql'   
+# host='localhost'
+user='root'
+password='root'
+port=3306
+database='demo'
